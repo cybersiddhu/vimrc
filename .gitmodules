@@ -46,3 +46,9 @@
 [submodule "bundle/ropevim"]
 	path = bundle/ropevim
 	url = https://github.com/sontek/rope-vim.git
+[submodule "bundle/virtualenv"]
+	path = bundle/virtualenv
+	url = https://github.com/jmcantrell/vim-virtualenv.git
+[submodule "bundle/ctrlp"]
+	path = bundle/ctrlp
+	url = https://github.com/kien/ctrlp.vim.git
