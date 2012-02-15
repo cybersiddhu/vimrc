@@ -8,6 +8,8 @@
 " Use Vim settings, rather then Vi settings.
 " This must be first, because it changes other options as a side effect.
 "-------------------------------------------------------------------------------
+set runtimepath=~/.pyvim,$VIMRUNTIME 
+
 filetype off
 
 call pathogen#runtime_append_all_bundles()
@@ -67,3 +69,7 @@ let g:ctrlp_user_command = 'find %s -type f'
 
 "exclude files or folders
 set wildignore+=*/.git/*, */.hg/*, */.svn/*, *.so
+
+"solarized colorscheme
+set background=dark
+colorscheme solarized
