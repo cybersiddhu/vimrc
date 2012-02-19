@@ -34,7 +34,7 @@ let g:pep8_map='<leader>8'   "pep8 plugin
 "tab completion and documentation
 au FileType python set omnifunc=pythoncomplete#Complete
 let g:SuperTabDefaultCompletionType = "context"
-set completeopt=menuone, longest, preview
+set completeopt=menuone,longest,preview
 
 "nerdtree plugin
 map <leader>n :NERDTreeToggle<CR>
@@ -47,7 +47,7 @@ map <leader>r :RopeRename<CR>
 nmap <leader>a <Esc>:Ack!
 
 "git integration
-%{fugitive#statusline()}
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
 "pytest plugin
 "Execute the tests
@@ -66,7 +66,7 @@ let g:ctrlp_working_path_mode = 2
 let g:ctrlp_user_command = 'find %s -type f'
 
 "exclude files or folders
-set wildignore+=*/.git/*, */.hg/*, */.svn/*, *.so
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*.so
 
 "solarized colorscheme
 set background=dark
