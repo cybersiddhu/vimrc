@@ -13,6 +13,13 @@ filetype off
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+se nu
+syntax on                           "syntax highlighing
+filetype on                          "try to detect filetypes
+filetype plugin indent on    "enable loading indent file for filetype
+
+
+
 
 "" Code folding
 set foldmethod=indent
@@ -23,10 +30,6 @@ map <leader>td <Plug>TaskList
 
 "" gundo plugin
 map <leader>g :GundoToggle<CR>
-
-syntax on                           "syntax highlighing
-filetype on                          "try to detect filetypes
-filetype plugin indent on    "enable loading indent file for filetype
 
 let g:pyflakes_use_quickfix = 0  "pyflakes plugin
 let g:pep8_map='<leader>8'   "pep8 plugin
